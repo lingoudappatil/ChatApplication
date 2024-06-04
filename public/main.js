@@ -15,12 +15,10 @@ messageForm.addEventListener('submit',(e) =>
     sendMessage()
 });
 
-
 socket.on("clients-total",(data) =>
     {
         clientsTotal.innerText = `Total Clients: ${data}`
     });
-
     function sendMessage()
     {
         if(messageInput.value === '') return
@@ -55,12 +53,9 @@ socket.on("clients-total",(data) =>
     `
 messageContainer.innerHTML += element
 scrollToBottom()
-
-
  }
 
  function scrollToBottom()
-
 {
     messageContainer.scrollTo(0,messageContainer.scrollHeight)
 }
@@ -90,15 +85,14 @@ messageInput.addEventListener('blur', (e)=>
 socket.on('feedback',(data) =>
 {
     clearFeedback()
-    const element =`<li class="message-feedback">
+    const element =`
+    <li class="message-feedback">
     <p class="feedback" id="feedback"><${data.feedback}/p>
     Lingouda is typing a message..
-</li>`
-
+    </li>
+`
 messageContainer.innerHTML += element
 })
-        
-
 function clearFeedback()
 {
     document.querySelectorAll('li.message-feedback').forEach(element =>
