@@ -1,6 +1,5 @@
 //main.js
 const socket=io();
-
 const clientsTotal = document.getElementById("clients-total")
 
 const messageContainer = document.getElementById('message-container')
@@ -65,23 +64,24 @@ messageInput.addEventListener('focus', (e) =>
     socket.emit('feedback',{
         feedback: ` ${nameInput.value} is typing a message`
     })
-
 });
 
 messageInput.addEventListener('keypress', (e)=>
     {
-        socket.emit('feedback',{
+        socket.emit('feedback',
+        {
             feedback: ` ${nameInput.value} is typing a message`
         })
-    
     });
 
 messageInput.addEventListener('blur', (e)=>
-        {
-            socket.emit('feedback',{
-                feedback: '',
-            })
-        });
+{
+     socket.emit('feedback',
+    {
+        feedback: '',
+     })
+ });
+
 socket.on('feedback',(data) =>
 {
     clearFeedback()
@@ -93,6 +93,7 @@ socket.on('feedback',(data) =>
 `
 messageContainer.innerHTML += element
 })
+
 function clearFeedback()
 {
     document.querySelectorAll('li.message-feedback').forEach(element =>
