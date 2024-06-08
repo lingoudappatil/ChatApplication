@@ -86,14 +86,16 @@ body {
   }
   
   .message-left > p > span,
-  .message-right > p > span {
+  .message-right > p > span 
+{
     display: block;
     font-style: italic;
     font-size: 12px;
     margin-top: 4px;
   }
   
-  .feedback {
+  .feedback
+{
     font-style: italic;
     font-size: 14px;
     padding: 0px 16px 16px 16px;
@@ -101,13 +103,15 @@ body {
     text-align: center;
   }
   
-  .message-form {
+  .message-form
+{
     display: flex;
     justify-content: space-between;
     width: 400px;
   }
   
-  .message-input {
+  .message-input 
+{
     flex-grow: 1;
     height: 48px;
     font-size: 16px;
@@ -117,7 +121,8 @@ body {
     background-color: #fff;
   }
   
-.send-button {
+.send-button
+{
     height: 48px;
     font-size: 16px;
     border: none;
@@ -127,7 +132,8 @@ body {
     cursor: pointer;
   }
   
-  .v-divider {
+  .v-divider 
+{
     height: 48px;
     width: 2px;
     background-color: #f6f6f6;
