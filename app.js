@@ -11,8 +11,6 @@ let socketsConnected = new Set()
 
 io.on("connection", onConnected)
 
-
-
 function onConnected(socket) 
 {
     console.log(`New connection: ${socket.id}`)
@@ -38,4 +36,3 @@ function onConnected(socket)
         socket.broadcast.emit('feedback',data)
     })
 }
-
