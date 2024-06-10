@@ -6,7 +6,8 @@
   box-sizing: border-box;
   scroll-behavior: smooth;
 }
-body {
+body 
+  {
     font-family: 'Open Sans', sans-serif;
     /* display: flex;
     flex-direction: column;
@@ -17,17 +18,20 @@ body {
     background-color: #ebebeb;
   }
   
-  .title {
+  .title
+  {
     margin: 20px 0;
   }
   
-  .main {
+  .main 
+  {
     border: 8px solid #dddddd;
     border-radius: 24px;
     overflow: hidden;
   }
   
-  .name {
+  .name 
+  {
     display: flex;
     font-size: 32px;
     font-weight: 700;
@@ -35,11 +39,13 @@ body {
     color: #7e7e7e;
     background-color: #ebebeb;
   }
-  .name > span {
+  .name > span
+  {
     color: #bbb;
   }
   
-  .name-input {
+  .name-input 
+ {
     font-size: 24px;
     font-weight: 700;
     color: #7e7e7e;
@@ -50,7 +56,8 @@ body {
     background-color: #ebebeb;
   }
   
-  .message-container {
+  .message-container 
+ {
     display: flex;
     flex-direction: column;
     background-color: #f6f6f6;
@@ -61,7 +68,8 @@ body {
   }
   
   .message-left,
-  .message-right {
+  .message-right 
+ {
     list-style: none;
     padding: 8px 12px;
     margin: 12px;
@@ -70,14 +78,16 @@ body {
     word-wrap: break-word;
   }
   
-  .message-left {
+  .message-left 
+ {
     border-radius: 20px 20px 20px 0px;
     align-self: flex-start;
     background-color: #fff;
     box-shadow: -2px 2px 4px #dcdcdc;
   }
   
-  .message-right {
+  .message-right
+ {
     border-radius: 20px 20px 0px 20px;
     align-self: flex-end;
     background-color: #2d2d2d;
@@ -131,15 +141,15 @@ body {
     background-color: #fff;
     cursor: pointer;
   }
-  
   .v-divider 
 {
     height: 48px;
     width: 2px;
     background-color: #f6f6f6;
-  }
+}
   
-  .clients-total {
+  .clients-total 
+{
     margin: 20px 0;
     color: #7e7e7e;
   }
