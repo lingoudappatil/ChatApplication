@@ -32,7 +32,6 @@ socket.on("clients-total",(data) =>
         messageInput.value = ''
     }
 
-
     socket.on('chat-message',(data) =>
     {
         console.log(data)
@@ -53,7 +52,6 @@ socket.on("clients-total",(data) =>
 messageContainer.innerHTML += element
 scrollToBottom()
  }
-
  function scrollToBottom()
 {
     messageContainer.scrollTo(0,messageContainer.scrollHeight)
