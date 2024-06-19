@@ -7,7 +7,6 @@ const nameInput = document.getElementById('name-input')
 const messageForm = document.getElementById('message-form')
 const messageInput = document.getElementById('message-input')
 
-
 messageForm.addEventListener('submit',(e) =>
 {
     e.preventDefault()
