@@ -9,7 +9,7 @@ app.use(express.static(path.join(__dirname, "public")));
 
 let socketsConnected = new Set()
 
-io.on("connection", onConnected)
+io.on("connection", onConnected) 
 
 function onConnected(socket) 
 {
