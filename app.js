@@ -3,7 +3,7 @@ const app = express()
 const path = require("path")
 const PORT = process.env.PORT || 8000
 const server = app.listen(PORT, () => console.log(`Server started on port ${PORT}`));
-const io = require("socket.io")(server)
+const io = require("socket.io")(server) 
   
 app.use(express.static(path.join(__dirname, "public")));
 
