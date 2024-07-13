@@ -8,7 +8,7 @@ const io = require("socket.io")(server)
 app.use(express.static(path.join(__dirname, "public")));
 
 let socketsConnected = new Set()
-
+ 
 io.on("connection", onConnected) 
 
 function onConnected(socket) 
