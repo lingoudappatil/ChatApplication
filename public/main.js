@@ -1,7 +1,7 @@
 //main.js
 const socket=io();
 const clientsTotal = document.getElementById("clients-total")
-   
+    
 const messageContainer = document.getElementById('message-container')
 const nameInput = document.getElementById('name-input')
 const messageForm = document.getElementById('message-form')
